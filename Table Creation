@@ -1,0 +1,20 @@
+Create an Employee table with empid, empname, job, deptno, salary, mgr_id, hiredate by adding not null for all the columns and unique for empid.
+1. Insert 20 records to the table
+
+2. write the query to create and insert records
+
+-> CREATE TABLE EMPLOYEE(EMPID INT UNIQUE, EMPNAME TEXT, JOB VARCHAR(20) , DEPTNO INT NOT NULL, SALARY FLOAT, MRG_ID INT NOT NULL, HIREDATE DATE NOT NULL);
+
+
+3. query to view all the records from the table
+
+ -> SELECT *FROM EMPLOYEE;
+
+
+4. query to count no. of records from the table
+
+-> SELECT COUNT(*) FROM EMPLOYEE;
+
+5. query to view only empid, empnam, job and salary of all the employees.
+
+-> SELECT EMPID, EMPNAME, JOB, SALARY FROM EMPLOYEE;
