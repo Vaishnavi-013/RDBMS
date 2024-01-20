@@ -1,0 +1,31 @@
+create a table 
+Table name :  person
+Table structure
+-> p_nid  int not null / unique
+-> p_name varchar(30)  not null
+-> p_address text
+
+1. insert 4 records to the table
+
+-> INSERT INTO PERSON VALUES(1, 'RAM', 'KARIMNAGAR');
+->INSERT INTO PERSON VALUES(2, 'SAM', 'KARIMNAGAR');
+->INSERT INTO PERSON VALUES(3, 'UMA', 'KARIMNAGAR');
+->INSERT INTO PERSON VALUES(4, 'SMITH', 'KARIMNAGAR');
+
+2. add a new column to the table  p_age int
+
+-> ALTER TABLE PERSON ADD P_AGE INT NOT NULL;
+
+4. update the age column of existing records
+
+-> UPADTE PERSON SET P_AGE = 21 WHERE P_ID = 2;
+-> UPADTE PERSON SET P_AGE = 25 WHERE P_ID = 4;
+
+5. extended the p_name column size to 50
+
+ALTER TABLE PERSON MODIFY P_NAME VARCHAR(50);
+
+6. add not null constraint for p_age, p_address columns
+
+-> ALTER TABLE PERSON MODIFY P_AGE NOT NULL;
+->ALTER TABLE PERSON MODIFY P_ADDRESS TEXT NOT NULL;
